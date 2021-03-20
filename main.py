@@ -45,7 +45,7 @@ def url_shortener(update: Update, _: CallbackContext) -> None:
     if link:
         url = s.tinyurl.short(f'https://{link[0]}')
         update.message.reply_text(url)
-        print(update.message.from_user.first_name, 'encurtou esse link:', f'https://{link[0]}')
+        print(update.message.from_user.first_name, 'shorted this link:', f'https://{link[0]}')
     else:
         update.message.reply_text('Please, send me a valid URL')
 
@@ -53,7 +53,7 @@ def url_shortener(update: Update, _: CallbackContext) -> None:
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("Token")
+    updater = Updater("1700750538:AAFAOYs4BahCGgX2mPpkZPbfOUcDCYEByOo")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
