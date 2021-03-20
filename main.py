@@ -53,7 +53,7 @@ def url_shortener(update: Update, _: CallbackContext) -> None:
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("1700750538:AAFAOYs4BahCGgX2mPpkZPbfOUcDCYEByOo")
+    updater = Updater("Token")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
